@@ -10,45 +10,45 @@
         }
 
         /* Style the header */
-    .header {
-        padding: 80px;
-        text-align: center;
-        background: teal;
-        color: white;
-    }
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: teal;
+            color: white;
+        }
 
-    /* Increase the font size of the h1 element */
-    .header h1 {
-        font-size: 40px;
-        float: left;
-    }
+        /* Increase the font size of the h1 element */
+        .header h1 {
+            font-size: 30px;
+            float: left;
+        }
 
-    /* Style the top navigation bar */
-    .navbar {
-        overflow: hidden;
-        background-color: rgb(155, 153, 153);
-    }
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(155, 153, 153);
+        }
 
-    /* Style the navigation bar links */
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
 
-    /* Right-aligned link */
-    .navbar a.right {
-        float: right;
-    }
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
 
-    /* Change color on hover */
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
         * {
             box-sizing: border-box;
@@ -106,88 +106,101 @@
             content: "";
             display: table;
             clear: both;
-        }
 
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-
-            .col-25,
-            .col-75,
-            input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
         }
     </style>
+
 </head>
 
 <body>
-    <div class="header">
-        <h1>Vanh Tharavong</h1>
-    </div>
 
-    <div class="navbar">
-        <a href="#">About Me</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-    </div>
+    <head>
+        <title>Sticky Navbar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
 
-    <h2>Contact Me!</h2>
-    <p>Please complete the form to contact me.</p>
+    <body style="height:1500px">
 
-    <div class="container">
-        <form action="/action_page.php">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="email" name="email" placeholder="Your email address..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">Country</label>
-                </div>
-                <div class="col-75">
-                    <select id="country" name="country">
-                        <option value="mexico">Mexico</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
+        <div class="container-fluid">
+            <br>
+            <h3>Vanh Tharavong</h3>
+        </div>
 
-</body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ResponsiveContact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Contact Me!</h2>
+        <p>Please complete the form to contact me.</p>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your email address..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="mexico">Mexico</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </body>
 
 </html>

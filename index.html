@@ -1,162 +1,57 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        /* Style the header */
-        .header {
-            padding: 80px;
-            text-align: center;
-            background: teal;
-            color: white;
-        }
-
-        /* Increase the font size of the h1 element */
-        .header h1 {
-            font-size: 40px;
-            float: left;
-        }
-
-        /* Style the top navigation bar */
-        .navbar {
-            overflow: hidden;
-            background-color: rgb(155, 153, 153);
-        }
-
-        /* Style the navigation bar links */
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        /* Right-aligned link */
-        .navbar a.right {
-            float: right;
-        }
-
-        /* Change color on hover */
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-
-        html {
-            box-sizing: border-box;
-        }
-
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-
-        .column {
-            float: center;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-        }
-
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            background-color: #474e5d;
-            color: white;
-            float: center;
-        }
-
-        .container {
-            padding: 0 16px;
-        }
-
-        .container::after,
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .title {
-            color: grey;
-        }
-
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .button:hover {
-            background-color: #555;
-        }
-
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
-    </style>
+  <title>Sticky Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
+<body style="height:1500px">
 
-<body>
+<div class="container-fluid">
+  <br>
+  <h3>Vanh Tharavong</h3>
+</div>
 
-    <div class="header">
-        <h1>Vanh Tharavong</h1>
-    </div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#card">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ResponsiveContact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="navbar">
-        <a href="#card">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="ResponsiveContact.html">Contact</a>
-    </div>
-
-
-    <h2 style="text-align:center">CEO & Founder</h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="assets/images/CaliCharlie.jpg" alt="Vanh" style="width:100%">
-                <div class="container">
-                    <h2>Vanh Tharavong</h2>
-                    <p class="title">Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum
-                    <div class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quisquam sequi
-                        saepe? Iure eveniet ullam quam minus deserunt quae quos laboriosam sed, error saepe eos
-                        doloribus mollitia minima eum quaerat?</div>
-                    </p>
-                    <p>simplyvpthar@gmail.com</p>
-                    <p><button class="button">Contact</button>
-                    <a href="ResponsiveContact.html">Contact</a>
-                    </p>
-                    
-                </div>
+<div class="container-fluid"><br>
+<h2 style="text-align:left">About Me</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="assets/images/CaliCharlie.jpg" class="rounded-circle" alt="Vanh" style="width:20%">
+            <div class="container">
+                <p class="title">Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum
+                <div class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quisquam sequi
+                    saepe? Iure eveniet ullam quam minus deserunt quae quos laboriosam sed, error saepe eos
+                    doloribus mollitia minima eum quaerat?</div>
+                </p>
+                <p>simplyvpthar@gmail.com</p>
+                <p>
+                    <button a href="ResponsiveContact.html">Contact</button>>
+                </p>
+                
             </div>
         </div>
+    </div>
 
 
 </body>
-
 </html>
